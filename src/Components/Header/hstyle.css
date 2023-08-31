@@ -3,15 +3,17 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: black;
   border-bottom: 1px solid #ccc;
 }
 
 .logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
-  text-decoration: none;
+  color:rgb(242, 52, 52);
+  text-decoration:none ;
+  
+ 
 }
 
 .navigation {
@@ -24,11 +26,17 @@
   flex-direction: column;
   gap: 3rem;
   text-align: center;
+  cursor: pointer;
+  
 }
 
 .nav-list li a {
-  color: #555;
+  color: rgb(14, 207, 210);
   text-decoration: none;
+}
+
+.nav-list li a:hover{
+  color: red;
 }
 
 .user-auth {
@@ -64,5 +72,23 @@
 
   .auth-button {
     padding: 0.5rem 1rem;
+  }
+}
+
+.logo h5 {
+  color: rgb(14, 207, 210);
+  margin-left: 1.2rem;
+  margin-top: -1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter-logo 4s steps(40, end) infinite;
+}
+
+@keyframes typewriter-logo {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

@@ -1,7 +1,8 @@
 .footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 1rem 0;
+    
     
   }
   
@@ -37,7 +38,7 @@
   }
   
   .social-icon:hover {
-    color: #007bff;
+    color: red;
   }
   
   .footer-bottom {
@@ -72,7 +73,8 @@
 }
 
 p{
-    color: #E1B0AC;
+    color: #8ffb7f;
+    
 }
  
   

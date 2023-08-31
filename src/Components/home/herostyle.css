@@ -1,17 +1,32 @@
 .hero {
-    /* background-image: url('journeystart-frontend/src/images /js.jpeg'); */
+    background-image: url('https://cdn.pixabay.com/photo/2021/12/02/16/46/graduation-6840941_1280.png');
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
     opacity: 0.9;
-    height: 60vh;
+    height: 80vh;
   }
   
   .hero-content {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .hero-content p {
+    color: black;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typewriter 3s steps(40, end); /* Adjust animation duration and steps */
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
   
   h1 {
@@ -26,7 +41,7 @@
   
   .cta-button {
     padding: 0.7rem 1.5rem;
-    background-color: #007bff;
+    background-color: red;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -37,5 +52,9 @@
   
   .cta-button:hover {
     background-color: #0056b3;
+  }
+
+  .hero-content h1{
+    color: black;
   }
   
