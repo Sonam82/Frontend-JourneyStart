@@ -1,5 +1,6 @@
 import React from 'react';
 import CourseCard from '../coursecards/CourseCard'; // Placeholder for course card component
+import './cstyle.css'
 import Header from '../Header/Header';
 import Footer from '../footer/Footer';
 import jsImage from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/js.png';
