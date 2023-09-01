@@ -1,59 +1,73 @@
-.course-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.course-thumbnail {
+  /* background-image: url('/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/js.png'); */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  opacity: 0.9;
+  position: relative;
+  flex-grow: 1;
+}
+.course-thumbnail img{
+  height: 30vh;
+  width: fit-content;
+  border-radius: 10%;
+}
+.course-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+
+.enroll-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.enroll-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Layout */
+
+@media screen and (max-width: 768px) {
   .course-card {
-    width: calc(50% - 10px); /* 50% width with a bit of spacing between cards */
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
-  
-  .course-thumbnail {
-    /* background-image: url('/Users/GauravPandey/journeyStart/my-edtech-app/src/images /js.jpeg'); */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 5rem 0;
-    opacity: 1.5;
-    height: max-content;
-    width: 50%; /* Half of the card's width for the thumbnail */
-  }
-  
-  .course-details {
-    width: 50%; /* Half of the card's width for the details */
-    margin-top: 1rem;
-    padding-left: 1rem; /* Add some spacing between thumbnail and details */
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  
-  p {
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  .enroll-button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .enroll-button:hover {
-    background-color: #0056b3;
-  }
+}
