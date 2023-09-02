@@ -1,0 +1,35 @@
+.about{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+.text{
+    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: aqua;
+    border-radius: 20px;
+    height: 60vh;
+    width:30%;
+    box-shadow:  10px 10px 10px ;
+}
+.text p{
+    color: black;
+    font-size: 1.3rem;
+}
+.pic{
+
+    height: 90vh;
+    width:40%;
+  
+}
+.pic img{
+    margin-left: 2rem;
+    margin-top: 4rem;;
+    margin-right: 6rem;
+    height: 70%;
+    width: 100%;
+    box-shadow: 10px 5px 20px;
+    border-radius: 50%;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './LoginStyle.css'; // Import your CSS file for styling
+import Header from '../Header/Header';
+import Footer from '../footer/Footer';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -17,6 +19,8 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="login-container">
       <div className="login-box">
         <h2>{isSignUp ? 'Sign Up' : 'Login'}</h2>
@@ -48,6 +52,8 @@ const Login = () => {
         </p>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

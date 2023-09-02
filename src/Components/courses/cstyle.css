@@ -25,6 +25,8 @@ h2 {
     flex: 1;
     /* max-width: calc(110%); 3 cards per row with a 20px gap */
     margin-bottom: 20px;
+    height: auto;
+    width: 25rem;
   }
   
   /* Course thumbnail styles */

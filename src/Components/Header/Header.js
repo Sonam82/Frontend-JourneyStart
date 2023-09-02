@@ -20,12 +20,10 @@ const Header = () => {
             <nav className="navigation">
                 <ul className="nav-list">
                     
-                    <li ><Link to='/'><FontAwesomeIcon icon={faHouse} size='2x' /></Link></li>
-
-
-                    <li ><Link to='/courses'><FontAwesomeIcon icon={faBook} size='2x' /></Link></li>
-                    <li ><Link to='/contact'><FontAwesomeIcon icon={faPhoneVolume} size='2x' /></Link></li>
-                    <li ><Link to='/login'><FontAwesomeIcon icon={faRightToBracket} size='2x' /></Link></li>
+                    <li ><Link to='/'><FontAwesomeIcon icon={faHouse} size='1x' />Home</Link></li>
+                    <li ><Link to='/courses'><FontAwesomeIcon icon={faBook} size='1x' />Courses</Link></li>
+                    <li ><Link to='/contact'><FontAwesomeIcon icon={faPhoneVolume} size='1x' />Contact</Link></li>
+                    <li ><Link to='/login'><FontAwesomeIcon icon={faRightToBracket} size='1x' />Login</Link></li>
                 </ul>
             </nav>
 

@@ -6,9 +6,11 @@
     text-align: center;
     padding: 5rem 0;
     opacity: 0.9;
-    height: 80vh;
+    height: 100vh;
   }
-  
+  li{
+    list-style: none;
+  }
   .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -16,18 +18,8 @@
   .hero-content p {
     color: black;
     overflow: hidden; /* Hide overflowing text */
-    white-space: nowrap; /* Prevent line breaks */
-    animation: typewriter 3s steps(40, end); /* Adjust animation duration and steps */
   }
   
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
   
   h1 {
     font-size: 2.5rem;

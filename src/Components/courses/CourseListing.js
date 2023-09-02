@@ -9,7 +9,6 @@ import css from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image
 import node from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/node.jpg';
 import rect from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/react.jpg';
 import mngdb from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/mongo.png';
-import expre from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/express.png';
 const CourseListing = () => {
   // Dummy course data (replace with actual data)
   const courses = [
@@ -18,10 +17,7 @@ const CourseListing = () => {
     {id:3,title:"JavaScript",instructor:'Gaurav Pandey',image:jsImage},
     {id:4,title:"reactjs",instructor:'Gaurav Pandey',image:rect},
     {id:5,title:"Nodejs",instructor:'Gaurav Pandey',image:node},
-    {id:6,title:"Mongodb",instructor:'Gaurav Pandey',image:mngdb},
-    {id:7,title:"expressjs",instructor:'Gaurav Pandey',image:expre}
-
-    // ...more courses
+    {id:6,title:"Mongodb",instructor:'Gaurav Pandey',image:mngdb}
   ];
 
   return (
