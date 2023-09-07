@@ -1,24 +1,29 @@
-import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../footer/Footer';
-//import abt from '../../image/about.jpg';
-import './contactStyle.css'
+import React from "react";
+import Header from "../Header/Header";
+import Footer from "../footer/Footer";
+import "./Contact.css";
+
 const Contact = () => {
   return (
     <div>
-      <Header/>
-      <h2>About Us</h2>
-      <div className='about'>
-         <div className='text'>
-          <p>
-          <b>"</b>At JourneyStart, our vision is to empower the next generation of technical students by providing them with free and accessible education.<b>"</b> <br/>We envision a world where every aspiring technologist has the opportunity to enhance their skills, regardless of their background or financial constraints. Through innovative learning resources, community engagement, and a commitment to excellence, we aim to foster a global community of learners who are equipped to shape the future through technology.
-          </p>
-         </div>
-         <div className='pic'>
-          {/* <img src={abt}/> */}
-         </div>
-      </div>
-      <Footer/>
+      <Header />
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <Footer />
     </div>
   );
 };
