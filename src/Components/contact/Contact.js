@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../footer/Footer';
-import abt from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/about.jpg'
+//import abt from '../../image/about.jpg';
 import './contactStyle.css'
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
          </div>
          <div className='pic'>
-          <img src={abt}/>
+          {/* <img src={abt}/> */}
          </div>
       </div>
       <Footer/>

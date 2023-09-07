@@ -1,35 +1,60 @@
 import React from 'react';
-import CourseCard from '../coursecards/CourseCard'; // Placeholder for course card component
-import './cstyle.css'
+import CourseCard from '../coursecards/CourseCard';
+import './cstyle.css';
+import { useHistory } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../footer/Footer';
-import jsImage from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/js.png';
-import html from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/html.jpg';
-import css from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/css.jpg';
-import node from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/node.jpg';
-import rect from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/react.jpg';
-import mngdb from '/Users/GauravPandey/Desktop/DSA/Frontend-JourneyStart/src/image/mongo.png';
+import jsImage from '../../image/js.png';
+import html from '../../image/web-design.png';
+import css from '../../image/css.jpg';
+import node from '../../image/node.jpg';
+import rect from '../../image/react.jpg';
+import mngdb from '../../image/mongo.png';
+
 const CourseListing = () => {
-  // Dummy course data (replace with actual data)
+  const history = useHistory();
+
   const courses = [
-    { id: 1, title: 'HTML', instructor: 'Gaurav Pandey',image:html },
-    { id: 2, title: 'CSS', instructor: 'Gaurav Pandey',image:css },
-    {id:3,title:"JavaScript",instructor:'Gaurav Pandey',image:jsImage},
-    {id:4,title:"reactjs",instructor:'Gaurav Pandey',image:rect},
-    {id:5,title:"Nodejs",instructor:'Gaurav Pandey',image:node},
-    {id:6,title:"Mongodb",instructor:'Gaurav Pandey',image:mngdb}
+    { id: 1, title: 'HTML', instructor: 'Gaurav Pandey', image: html },
+    { id: 2, title: 'CSS', instructor: 'Gaurav Pandey', image: css },
+    { id: 3, title: 'JavaScript', instructor: 'Gaurav Pandey', image: jsImage },
+    { id: 4, title: 'reactjs', instructor: 'Gaurav Pandey', image: rect },
+    { id: 5, title: 'Nodejs', instructor: 'Gaurav Pandey', image: node },
+    { id: 6, title: 'Mongodb', instructor: 'Gaurav Pandey', image: mngdb },
   ];
+
+  
+  const navigateToHtmlCourse = () => {
+    history.push('/Html-content-page');
+  };
+ const navigateToCssCourse=()=>{
+  history.push('/Css-content-page');
+ }
+ const navigateToJavaScriptCourse=()=>{
+  history.push('/Javascript-content-page');
+ }
+
 
   return (
     <div>
-      <Header/>
+      <Header />
       <h2>Explore Courses</h2>
       <div className="course-grid">
-        {courses.map(course => (
-          <CourseCard key={course.id} course={course} />
+        {courses.map((course) => (
+          <div
+            key={course.id}
+            onClick={navigateToHtmlCourse}
+           
+          >
+            
+            <CourseCard course={course} />
+          </div>
+
+          
+          
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

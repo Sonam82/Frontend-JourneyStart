@@ -1,0 +1,59 @@
+
+.Main-html-content-div {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+  .html-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    background-color:#556b2f;
+        
+    
+    
+  }
+  
+  .video {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    background-color: rgb(14, 207, 210);
+  }
+  
+  .video img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .video h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .video p {
+    color:black;
+    cursor: pointer;
+  }
+
+  .video p:hover{
+    color: white;
+  }
+  .Main-html-content-div{
+    color: #b9eb62;
+  }
+  .Main-html-content-div h1{
+    height: 3rem;
+    
+    justify-content: center;
+    width: 105%;
+    margin-left: -1rem;
+    
+  }

@@ -10,21 +10,21 @@
     margin-bottom: 5rem;
     background-color: aqua;
     border-radius: 20px;
-    height: 60vh;
-    width:30%;
+    height: 70vh;
+    margin-right: 5rem;
     box-shadow:  10px 10px 10px ;
 }
 .text p{
     color: black;
     font-size: 1.3rem;
 }
-.pic{
+/* .pic{
 
     height: 90vh;
     width:40%;
   
-}
-.pic img{
+} */
+/* .pic img{
     margin-left: 2rem;
     margin-top: 4rem;;
     margin-right: 6rem;
@@ -32,4 +32,15 @@
     width: 100%;
     box-shadow: 10px 5px 20px;
     border-radius: 50%;
+} */
+
+@media (max-width: 768px) {
+    .text {
+        margin-left: 2rem; /* Adjust the left margin for smaller screens */
+        margin-right: 2rem; /* Adjust the right margin for smaller screens */
+        margin-top: 2rem; /* Adjust the top margin for smaller screens */
+        margin-bottom: 2rem; /* Adjust the bottom margin for smaller screens */
+        box-shadow: none; /* Remove the box shadow for smaller screens */
+    }
 }
+

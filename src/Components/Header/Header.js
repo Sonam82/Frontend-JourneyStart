@@ -1,34 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import './hstyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { faBook } from '@fortawesome/free-solid-svg-icons';
-import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
-
-import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
-
+import { faHouse, faBook, faPhoneVolume, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-    return (
-        <header className="header">
-            <div className="logo">
-                <h1><Link to="/">JourneyStart</Link></h1>
-                 <h5>The Way of Excellence !</h5>
-            </div>
-            <nav className="navigation">
-                <ul className="nav-list">
-                    
-                    <li ><Link to='/'><FontAwesomeIcon icon={faHouse} size='1x' />Home</Link></li>
-                    <li ><Link to='/courses'><FontAwesomeIcon icon={faBook} size='1x' />Courses</Link></li>
-                    <li ><Link to='/contact'><FontAwesomeIcon icon={faPhoneVolume} size='1x' />Contact</Link></li>
-                    <li ><Link to='/login'><FontAwesomeIcon icon={faRightToBracket} size='1x' />Login</Link></li>
-                </ul>
-            </nav>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-        </header>
-    );
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
+      <div className="logo">
+        <h1><Link to="/">JourneyStart</Link></h1>
+        <h5>The Way of Excellence !</h5>
+      </div>
+      <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
+        <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
+          <li><Link to='/'><FontAwesomeIcon icon={faHouse} size='1x' />Home</Link></li>
+          <li><Link to='/courses'><FontAwesomeIcon icon={faBook} size='1x' />Courses</Link></li>
+          <li><Link to='/contact'><FontAwesomeIcon icon={faPhoneVolume} size='1x' />About Us</Link></li>
+          <li><Link to='/login'><FontAwesomeIcon icon={faRightToBracket} size='1x' />Login</Link></li>
+        </ul>
+      </nav>
+      <button className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </button>
+    </header>
+  );
 };
 
 export default Header;
